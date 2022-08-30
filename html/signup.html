@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Open+Sans:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/styles.css">
+    <script   src="https://code.jquery.com/jquery-3.6.1.min.js"   integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="   crossorigin="anonymous"></script>
+    <script> 
+        $(document).ready(function(){
+          $("#header").load("header.html"); 
+          $("#footer").load("footer.html"); 
+        });
+    </script>  
+    <title>Sign Up</title>
+</head>
+<body>
+    <div id="header"></div>
+    <section id="signUp">
+        <h2>Sign Up</h2>
+        <div id="formContainer">
+            <form>
+                <div class="item1">
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="John" required>
+                </div>
+                
+                <div class="item2">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" placeholder="Citizen" required>
+                </div>
+                
+                <div class="item3">
+                    <label for="email">Email:</label>
+                    <input type="email" size="40" id="email" name="email" title="Please, enter your email" placeholder="john.citizen@tafe.com" required>
+                </div>
+
+                <div class="item4">
+                    <label for="address">Address:</label>
+                    <input type="text" size="40" id="address" name="address" placeholder="123 First Avenue, Burleigh Heads, QLD 4220" required>
+                </div>
+                
+                <div class="item5">
+                    <label for="mobile">Mobile Number:</label>
+                    <input type="tel" id="mobile" name="mobile" pattern="[0-9]{10}" title="Ten characters required." placeholder="0400000000" required>
+                </div>
+
+                <div class="item6">
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <input type="radio" id="phone" name="cmethod" value="phone">
+                        <label for="phone">Phone</label>
+                        <br>
+                        <input type="radio" id="emailRadio" name="cmethod" value="email">
+                        <label for="emailRadio">Email</label>
+                    </fieldset>
+                </div>
+
+                <div class="item7">
+                    <input type="range" min="0" max="1" value="1" class="slider" id="offers">
+                    <label for="offers">Receive Offers</label>
+                </div>
+
+                <div class="item8">
+                    <p>Motivation to Start Working Out</p>
+                    <input type="checkbox" id="weightLoss" name="motivation" value="weight loss">
+                    <label for="weightLoss">Weight loss</label>
+                    <br>
+                    <input type="checkbox" id="sportstherapy" name="motivation" value="sports therapy">
+                    <label for="sportstherapy">Sports Therapy</label>
+                    <br>
+                    <input type="checkbox" id="performance" name="motivation" value="performance">
+                    <label for="performance">Performance</label>
+                    <br>
+                    <input type="checkbox" id="musclegain" name="motivation" value="muscle gain">
+                    <label for="musclegain">Muscle Gain</label>
+                </div>
+
+                <div class="item9">
+                    <input type="submit" value="Submit">
+                </div>
+                <div class="item10" id="help">
+                    <a href="https://www.youtube.com/watch?v=fNcJuPIZ2WE">help</a>
+                    <iframe id="youtube" width="300" height="200" src="https://www.youtube.com/embed?v=fNcJuPIZ2WE"></iframe>
+                </div>
+            </form>
+        </div>
+    </section>
+    <div id="footer"></div>
+    <script src="../javascript/script.js"></script>
+    
+</body>
+</html>
