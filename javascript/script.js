@@ -6,7 +6,7 @@ const help = document.getElementById('help');
 const youTube = document.getElementById('youtube');
 
 hamburger.onmouseover = () => {
-    nav.style.display = "block";
+	nav.style.display = "block";
 }
 
 nav.onmouseover = () => {
@@ -14,7 +14,7 @@ nav.onmouseover = () => {
 }
 
 nav.onmouseout = () => {
-    nav.style.display = "none";
+	nav.style.display = "none";
 } 
 
 // event listener to close nav menu on mobile version
