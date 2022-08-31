@@ -10,7 +10,7 @@ hamburger.onmouseover = () => {
 }
 
 nav.onmouseover = () => {
-    nav.style.display = "block";
+	nav.style.display = "block";
 }
 
 nav.onmouseout = () => {
